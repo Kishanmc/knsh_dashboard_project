@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fundraising Startup Ideas - Sign Up</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="bg-gray-100 h-screen flex items-center justify-center">
+    <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-lg">
+      <!-- Header with brief info -->
+      <h2 class="text-2xl font-bold mb-4 text-center text-gray-700">Sign Up</h2>
+      <p class="text-gray-500 text-center mb-6">
+        Join our platform to either pitch your startup idea or support innovative projects!
+      </p>
+
+      <form id="signupForm" action="C:\xampp\htdocs\fundraising\signup.php" method="POST">
+        <!-- Full Name -->
+        <div class="mb-4">
+          <label for="fullName" class="block text-gray-600">Full Name</label>
+          <input
+            id="fullName"
+            type="text"
+            placeholder="Enter your full name"
+            class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+            required
+          />
+        </div>
+
+        <!-- Email Input -->
+        <div class="mb-4">
+          <label for="email" class="block text-gray-600">Email</label>
+          <input
+            id="email"
+            type="email"
+            placeholder="Enter your email"
+            class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+            required
+          />
+        </div>
+
+        <div class="mb-4">
+          <label for="password" class="block text-gray-600">Password</label>
+          <input id="password" name="password" type="password" placeholder="Enter your password"
+              class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" required>
+      </div>
+
+        <!-- Contact Number -->
+        <div class="mb-4">
+          <label for="contactNumber" class="block text-gray-600">Contact Number</label>
+          <input
+            id="contactNumber"
+            type="tel"
+            placeholder="Enter your contact number"
+            class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+            required
+          />
+        </div>
+
+        <!-- Location -->
+        <div class="mb-4">
+          <label for="location" class="block text-gray-600">Location (City, Country)</label>
+          <input
+            id="location"
+            type="text"
+            placeholder="Enter your location"
+            class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+            required
+          />
+        </div>
+
+        <!-- User Type Selection -->
+        <div class="mb-4">
+          <label for="userType" class="block text-gray-600">Sign Up As</label>
+          <select
+            id="userType"
+            class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+            required
+          >
+            <option value="" disabled selected>Select role</option>
+            <option value="funder">Funder</option>
+            <option value="ideaPresenter">Idea Presenter</option>
+          </select>
+        </div>
+
+       
+
+        <!-- Terms & Conditions Checkbox -->
+        <div class="mb-4">
+          <label class="flex items-center">
+            <input
+              id="termsCheckbox"
+              type="checkbox"
+              class="form-checkbox h-4 w-4 text-blue-600"
+              required
+            />
+            <span class="ml-2 text-gray-600">I agree to the
+              <a href="#" class="text-blue-500 hover:underline">terms and conditions</a>.
+            </span>
+          </label>
+        </div>
+
+        <!-- Sign Up Button with Loading Indicator -->
+        <div class="text-center mb-4">
+          <button
+            type="submit"
+            class="w-full px-6 py-2 text-white bg-blue-600 rounded-lg hover:bg-blue-700"
+          ><a href = 'idea_presenter_dashboard.html'>Sign Up</a>
+            
+            <span id="loadingSpinner" class="hidden ml-2">⏳</span>
+          </button>
+        </div>
+
+        <!-- Error Message -->
+        <p id="signupError" class="text-red-500 text-center hidden">
+          Please fill all fields correctly and agree to the terms.
+        </p>
+      </form>
+
+      <!-- Success Message -->
+      <div id="signupSuccess" class="text-green-500 text-center hidden">
+        Successfully registered! Redirecting...
+      </div>
+
+      <div class="text-center mt-4">
+        <p>
+          Already have an account?
+          <a href="login.html" class="text-blue-500 hover:underline">Login</a>
+        </p>
+      </div>
+    </div>
+
+   <script src="signup.js"></script>
+  </body>
+</html>

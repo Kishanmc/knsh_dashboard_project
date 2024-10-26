@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Idea Presenter Dashboard</title>
+</head>
+<body>
+    <div class="dashboard-container">
+        <header>
+            <h1>Idea Presenter Dashboard</h1>
+            <nav>
+                <ul>
+                    <li><a href="logout.html">Logout</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="welcome-section">
+                <h2>Welcome, <span id="username"></span>!</h2>
+                <p>Here you can manage your ideas.</p>
+            </section>
+            <section class="ideas-section">
+                <h2>Your Ideas</h2>
+                <ul id="ideas-list">
+                    <!-- Ideas will be populated here -->
+                </ul>
+            </section>
+            <section class="add-idea-section">
+                <h2>Add New Idea</h2>
+                <form id="add-idea-form">
+                    <input type="text" id="idea-title" placeholder="Idea Title" required>
+                    <textarea id="idea-description" placeholder="Idea Description" required></textarea>
+                    <button type="submit">Add Idea</button>
+                </form>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

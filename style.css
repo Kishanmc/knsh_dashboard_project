@@ -1,0 +1,206 @@
+/* Reset basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('city-background.jpg'); /* Replace with a suitable city background image */
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.login-box {
+    background: linear-gradient(to bottom right, #6a11cb, #2575fc);
+    padding: 40px 40px 60px;
+    border-radius: 15px;
+    width: 350px;
+    position: relative;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.logo-circle {
+    width: 80px;
+    height: 80px;
+
+    background-color: white;
+    border-radius: 50%;
+    margin: -60px auto 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+h2 {
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px 0;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    outline: none;
+    color: white;
+    font-size: 18px;
+}
+
+.input-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    color: rgba(255, 255, 255, 0.5);
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+    top: -20px;
+    color: #fff;
+    font-size: 12px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 20px;
+}
+
+.remember-me label {
+    color: white;
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    color: #2575fc;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #e6e6e6;
+}
+
+.forgot-password {
+    margin-top: 15px;
+}
+
+.forgot-password a {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+/* Styling for the sign-up section */
+.signup-box {
+    margin-top: 30px;
+}
+
+.signup-box p {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.signup-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.signup-btn:hover {
+    background-color: white;
+    color: #2575fc;
+}
+/* Logo Styling - Centered and Responsive */
+.container {
+    display: flex;
+    justify-content: center;  /* Horizontally center the logo */
+    align-items: center;      /* Vertically center */
+    flex-direction: column;   /* Stack the logo and form content vertically */
+    height: 100vh;            /* Full height of the viewport */
+}
+
+.container img {
+    width: 120px;   /* Adjust logo size based on the container */
+    max-width: 100%; 
+    border-radius: 50px;/* Ensure the logo doesn't exceed the container width */
+    height: auto;    /* Maintain aspect ratio */
+    margin-bottom: 20px;  /* Space below the logo */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16));
+}
+
+/* Logo hover effect */
+.container img:hover {
+    transform: scale(1.1);  /* Slightly increase size on hover for interaction */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+/* Form and container styling */
+.form-container {
+    text-align: center;  /* Center text and form inputs */
+    width: 100%;
+    max-width: 400px;    /* Limit the form's width */
+    background-color: white; /* Make the form pop with a clean background */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* Light shadow for the form */
+}
+
+body {
+    background-color: #f4f4f9; /* Light background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
